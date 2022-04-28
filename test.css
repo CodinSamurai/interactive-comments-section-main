@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    font-weight: 1200;
+    color:rgba(152, 107, 156, 1);
+}
+h3, h4{
+  color:rgba(152, 107, 156, 1); 
+}
+p{
+    color:rgba(152, 107, 156, 0.8); 
+}
+.logo{
+    color: red;
+}
+
+.header{
+    background-image: url(../TinDog-Start-master/images/rod-long-kImU-9S9uh8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.text{
+    background-color: transparent;
+    text-align: center;
+    padding-top: 50px;
+    backdrop-filter: blur(2px);
+    margin-top: 50px;
+}
+
+.text h2{
+    color: red;
+    margin-top: 45px;
+    font-size: 50px;
+    font-weight: 900;
+    word-spacing: 5rem;
+}
+
+.text h4{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    background-image: linear-gradient(to left, pink, red, blue,white);
+     background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-star{
+    color: pink;
+    margin:20px 0 30px 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.text button{
+    background:linear-gradient(to top,aqua,lightblue,pink);
+    padding: 20px;
+    border: none;
+    color: blue;
+}
+
+.dishes{
+    text-align: center;
+}
+.toptext{
+    padding-top: 10px;
+}
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.images img, .menus img{
+    width: 300px;
+}
+
+.menus{
+    text-align: center;
+    background-color:rgba(255, 194, 204,0.5);
+}
+.menu1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.form{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height:620px;
+	width: 530px;
+    margin:  20px auto;
+	background: rgba(149, 175, 187, 0.5);
+	border-radius:10px;
+	box-shadow: 0 0 40px rgba(8,7,16,0.6);
+	backdrop-filter: blur(2px);
+	border:2px solid rgba(255,255,255,0.1);
+	padding:50px 10px;
+ }
+.mainform{
+    background-image: url(../TinDog-Start-master/images/chef-1417239.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* form *{
+	color:#ffffff;
+	letter-spacing:0.5px;
+	outline:none;
+	border: none;
+} */
+
+input {
+	display:block;
+	width:80%;
+	height:35px;
+	background:rgba(152, 107, 156, 0.5);
+	border-radius:3px;
+	padding:0 10px;
+	margin:8px auto;
+	font-size:14px;
+	font-weight:300;
+    align-items: center;
+    justify-content: center;
+}
+.radio, .form-control-textarea{
+    text-align: center;
+}
+.form-control-radio{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    background:rgba(152, 107, 156, 0.5);
+}
+.form-control-text{
+    width: 90%;
+    resize: none;
+    background:rgba(152, 107, 156, 0.5);
+}
+input:focus{
+    border: 3px solid red;
+}
+.section-title-text{
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+::placeholder{
+	color:#345a67;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+
+.button {
+    text-align: center;
+	width:50%;
+	background:#ffffff;
+	color:#080710;
+	padding:15px 0;
+	font-weight:700;
+	font-size:18px;
+	border-radius:10px;
+	cursor:pointer;
+}
+
+.form-group-btn{
+    margin-top: 30px;
+    text-align: center;
+}
+.section-title-text h1{
+    color: rgba(152, 107, 156, 1);
+}

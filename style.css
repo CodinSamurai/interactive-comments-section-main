@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body-header img{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+h4 span{
+    color: #cbced1;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.container{
+    width:600px;
+	height:auto;
+	border-radius:40px;
+	padding: 60px 35px 35px 35px;
+	background:hsl(228, 33%, 97%);
+	box-shadow: 13px 13px 20px
+        #cbced1, -13px -13px 20px #fff;
+	margin: 10px auto;
+}
+
+.header {
+    background-color: #fff;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+.body-header{
+    position: relative;
+}
+.body-header h4{
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+}
+
+.body-header button{
+    position: absolute;
+    left: 650px;
+    bottom: 50px;
+    background-color: transparent;
+    color: hsl(211, 10%, 45%);
+}
+
+.header2{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 4px 0 4px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.float{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    width: 75%;
+    margin: 4px 0 4px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.body-right2{
+    padding: 10px;
+}
+
+.body-header2{
+    display: flex;
+    /* justify-content: center; pushes it to center*/
+    align-items: center;
+    width: 240px;
+    justify-content: space-between;
+}
+.body-header2 h4:nth-child(3){
+    color: #cbced1;
+}
+
+.headd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    color: hsl(238, 40%, 52%);
+    border: none;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn .fa-reply{
+    margin-right: 10px;
+    font-size: 11px;
+}
+.pic img{
+    width: 40px;
+}
+/* .form{
+    
+} */
+.commentInput{
+    padding: 30px;
+}
+.appendComment{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.body-left{
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    padding: 10px 2px;
+    margin-top: 20px;
+}
+.red{
+    color: red;
+}
+.quote img{
+    width: 40px;
+}
+.quote{
+    display: none;
+}
+
+.work{
+    /* display: flex !important; */
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    width: 55%;
+}
+
+.inline{
+    display: inline;
+    color: red;
+}
+.newDiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.deleteSpan{
+    background-color: red;
+    padding: 10px;
+}
