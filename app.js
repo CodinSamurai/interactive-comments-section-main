@@ -1,7 +1,6 @@
 var increase = document.querySelectorAll('.increase');
 var decrease = document.querySelectorAll('.decrease');
-var result = document.querySelectorAll('.result');
-result.style.color = 'red';
+var inner = document.querySelectorAll('.result');
 
 increase.forEach(function(hello){
     hello.addEventListener('click', function(){
