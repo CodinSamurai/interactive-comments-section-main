@@ -2,6 +2,7 @@ var increase = document.querySelectorAll('.increase');
 var decrease = document.querySelectorAll('.decrease');
 var result = document.querySelector('.result');
 
+
 increase.forEach(function(hello){
     hello.addEventListener('click', function(){
         hello.style.backgroundColor = 'green';
