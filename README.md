@@ -1,4 +1,4 @@
-https://adorable-rolypoly-19d849.netlify.app/
+https://codinsamuraichat.netlify.app
 
 
 # Frontend Mentor - Interactive comments section
