@@ -6,6 +6,9 @@
 textarea{
     resize: none;
 }
+.reddd{
+    background-color: green;
+}
 
 .body-header img{
     margin-left: 10px;
@@ -131,8 +134,17 @@ h4 span{
     margin-bottom: 30px;
     padding: 10px;
 }
+.newDiv img{
+    background-color: palevioletred;
+}
 .deleteSpan{
-    background-color: red;
+    /* border: 2px solid red; */
+    background-color: rgba(255, 0, 0,0.6);
+    margin-top: 2%;
+    padding: 5px;
+    color: #fff;
+    height: fit-content;
+    cursor: pointer;
 }
 
 .body-left{
@@ -147,18 +159,27 @@ h4 span{
 }
 .quote img{
     width: 40px;
-    background-color: red;
+    background-color: palevioletred;
     margin-right: 20px;
 }
 .thevalue input{
    width: 280px;
-   background-color: red;
+   border: none;
    padding: 3px;
    /* padding: 8px; */
 }
+input:focus{
+    background-color: red;
+    border: 0;
+}
+
 .thevalue button{
-    background-color: rebeccapurple;
+    background-color: palevioletred;
+    border: none;
+    color: #fff;
     padding: 4px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 .quote{
     display: none;
@@ -180,15 +201,18 @@ h4 span{
 }
 .newDiv{
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     justify-content: space-around;
-    border: 2px solid yellow;
+    border: 1px solid pink;
     margin-bottom: 4px;
     height: 50px;
+    margin-left: 14px;
+    /* padding-left: 20px; */
 }
 
 .red{
-    background-color: black;
     width: 70%;
-    border: 3px solid rebeccapurple;
+    border: 1px solid rebeccapurple;
+    justify-content: center;
+    overflow: auto;
 }

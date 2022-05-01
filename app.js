@@ -4,7 +4,8 @@ var result = document.querySelectorAll('.result');
 
 increase.forEach(function(hello){
     hello.addEventListener('click', function () {
-        hello.style.backgroundColor = 'green';
+        // hello.style.backgroundColor = 'green';
+        hello.classList.toggle('reddd');
         console.log(hello);
         // res1++;
         // if (res1 > 0){
@@ -28,7 +29,7 @@ decrease.forEach(function(hello2){
        res.innerHTML  = res.innerHTML - 1;
        console.log(res);
     if (res.innerHTML > 0){
-        res.style.color = "green"
+        res.style.color = "green";
     } else{
         res.style.color = "red"
     }
