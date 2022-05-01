@@ -126,7 +126,9 @@ h4 span{
     margin-bottom: 30px;
     padding: 10px;
 }
-
+.deleteSpan{
+    background-color: red;
+}
 
 .body-left{
     width:fit-content;
@@ -140,6 +142,18 @@ h4 span{
 }
 .quote img{
     width: 40px;
+    background-color: red;
+    margin-right: 20px;
+}
+.thevalue input{
+   width: 280px;
+   background-color: red;
+   padding: 3px;
+   /* padding: 8px; */
+}
+.thevalue button{
+    background-color: rebeccapurple;
+    padding: 4px;
 }
 .quote{
     display: none;
@@ -148,9 +162,11 @@ h4 span{
 .work{
     /* display: flex !important; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
     margin: 10px auto;
-    width: 55%;
+    border: 1px solid pink;
+    width: 85%;
+    height: 40px;
 }
 
 .inline{
