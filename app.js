@@ -137,18 +137,3 @@ Array.from(formm).forEach(function(ee){
     })
     
 })
-
-// var spann = document.querySelectorAll('.deleteSpan');
-// spann.forEach(function(all){
-//     all.addEventListener('click', function(e){
-//         // all.style.backgroundColor = 'blue';
-//         // console.log(all.innerHTML);
-//     if (e.target.classList == 'deleteSpan'){
-//         // const par = e.target.parentElement;
-//         // hello.removeChild(par);
-//         // console.log('working');
-//         e.target.style.backgroundColor = 'blue';
-//         console.log(e.target.innerHTML);
-//     }
-// })
-// })
