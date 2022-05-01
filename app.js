@@ -15,7 +15,7 @@ increase.forEach(function(hello){
        var ress = hello.parentElement.children[1];
        ress.innerHTML++;
         if (ress.innerHTML > 0){
-            ress.style.color = "blue"
+            ress.style.color = "green"
         } else{
             ress.style.color = "red"
         }
@@ -28,7 +28,7 @@ decrease.forEach(function(hello2){
        res.innerHTML  = res.innerHTML - 1;
        console.log(res);
     if (res.innerHTML > 0){
-        res.style.color = "blue"
+        res.style.color = "green"
     } else{
         res.style.color = "red"
     }
@@ -45,13 +45,13 @@ reply.forEach(function(replybtn){
     replybtn.addEventListener('click', function(e){
     console.log(e.target.parentElement.parentElement.nextElementSibling.children[1]);
         var longie = e.target.parentElement.parentElement.nextElementSibling.children[1];
-        if (longie.style.display == "none"){
-            longie.style.display = "block";
-            longie.classList.add('work');
+        if (longie.style.display == "flex"){
+            longie.style.display = "none";
+            console.log('fired');
             } else {
-                longie.style.display = "none";
-        
+                longie.style.display = "flex";
                 longie.classList.add('work');
+                console.log('fired  again');
             }
 
 
@@ -75,6 +75,8 @@ reply.forEach(function(replybtn){
 // var image1 = document.querySelector('.image');
 // var hello = document.querySelector('.hello');
 // var form1 = document.forms[0];
+
+
 // form1.addEventListener('submit', function(e){
 //     e.preventDefault();
 //     var newText = form1.querySelector('input[type="text"]').value;
@@ -100,6 +102,41 @@ reply.forEach(function(replybtn){
 //     form1.reset();
 // })
 
+
+var formm = document.forms;
+console.log(formm);
+Array.from(formm).forEach(function(ee){
+    ee.addEventListener('submit', function(e){
+        e.preventDefault();
+        var newText = ee.querySelector('input[type="text"]').value;
+        console.log(newText);
+        var p = document.createElement('p');
+        var div = document.createElement('div');
+        var span = document.createElement('span')
+        var img = document.createElement('img');
+        var hello2 = e.target.parentElement.parentElement.children[0];
+    
+        div.appendChild(img);
+        div.appendChild(p);
+        div.appendChild(span)
+        hello2.appendChild(div);
+    
+        p.textContent = newText;
+        img.src = "images/avatars/image-juliusomo.png"
+        span.textContent = 'Delete'
+    
+        div.classList.add("newDiv");
+        span.classList.add('deleteSpan');
+        p.classList.add('red')
+        // console.log(p.classList);
+    
+    
+    
+        ee.reset();
+       console.log( e.target.parentElement.parentElement.children[0]);
+    })
+    
+})
 
 // var spann = document.querySelectorAll('.deleteSpan');
 // spann.forEach(function(all){
