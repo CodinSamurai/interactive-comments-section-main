@@ -130,11 +130,33 @@ Array.from(formm).forEach(function(ee){
         span.classList.add('deleteSpan');
         p.classList.add('red')
         // console.log(p.classList);
+        console.log(span)
     
     
     
         ee.reset();
        console.log( e.target.parentElement.parentElement.children[0]);
+    })
+
+})
+
+// var workp = document.querySelector('span');
+// var foedm = document.querySelector('.quote');
+
+// console.log(workp);
+
+var dark1 = document.querySelector('.dark');
+dark1.addEventListener('click', function(){
+    var body = document.querySelector('.container');
+    body.classList.toggle('darkmode');
+    var ele = document.querySelectorAll('.header2');
+    ele.forEach(function(e){
+        e.classList.toggle('darkmode');
+    })
+
+    var ele2 = document.querySelectorAll('.float');
+    ele2.forEach(function(ee){
+        ee.classList.toggle('darkmode');
     })
     
 })

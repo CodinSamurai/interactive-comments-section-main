@@ -76,9 +76,12 @@ h4 span{
     /* background-color: red; */
     margin-left: 40px;
     padding-left: 50px;
-    border-left: 4px solid black;
+    border-left: 4px solid rgba(90, 83, 83,0.5);
 }
-
+.darkmode{
+    background-color: black;
+    color: #fff;
+}
 
 .body-right2{
     padding: 10px;
