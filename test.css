@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-span{
+/* span{
     font-weight: 1200;
     color:rgba(152, 107, 156, 1);
 }
@@ -16,6 +16,7 @@ p{
 .logo{
     color: red;
 }
+
 
 .header{
     background-image: url(../TinDog-Start-master/images/rod-long-kImU-9S9uh8-unsplash.jpg);
@@ -116,7 +117,7 @@ p{
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
-    height:620px;
+    /* height:620px;
 	width: 530px;
     margin:  20px auto;
 	background: rgba(149, 175, 187, 0.5);
@@ -131,14 +132,14 @@ p{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 /* form *{
 	color:#ffffff;
 	letter-spacing:0.5px;
 	outline:none;
 	border: none;
 } */
-
+/*
 input {
 	display:block;
 	width:80%;
@@ -198,4 +199,8 @@ input:focus{
 }
 .section-title-text h1{
     color: rgba(152, 107, 156, 1);
+} */
+
+.jqueryy{
+    color: rgb(76, 103, 144);
 }

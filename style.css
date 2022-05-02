@@ -184,8 +184,9 @@ h4 span{
    /* padding: 8px; */
 }
 input:focus{
-    background-color: red;
+    /* background-color: red; */
     border: 0;
+    outline: 0;
 }
 
 .thevalue button{
