@@ -8,6 +8,12 @@ textarea{
 }
 .reddd{
     background-color: green;
+    color: #fff;
+}
+
+.green{
+    background-color: red;
+    color: #fff;
 }
 
 .body-header img{
@@ -78,9 +84,15 @@ h4 span{
     padding-left: 50px;
     border-left: 4px solid rgba(90, 83, 83,0.5);
 }
-.darkmode{
+.darkdiv{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dark{
+    padding: 5px;
     background-color: black;
     color: #fff;
+    cursor: pointer;
 }
 
 .body-right2{
@@ -218,4 +230,17 @@ input:focus{
     border: 1px solid rebeccapurple;
     justify-content: center;
     overflow: auto;
+}
+
+.darkmode{
+    background-color: black;
+    color: #fff;
+}
+
+.white{
+    border: 1px solid #fff;
+}
+
+.white2{
+    border-left: 3px solid #fff;
 }

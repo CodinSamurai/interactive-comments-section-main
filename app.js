@@ -5,8 +5,12 @@ var result = document.querySelectorAll('.result');
 increase.forEach(function(hello){
     hello.addEventListener('click', function () {
         // hello.style.backgroundColor = 'green';
-        hello.classList.toggle('reddd');
+        // hello.classList.toggle('reddd');
+        hello.classList.add('reddd');
         console.log(hello);
+        setTimeout(function(){
+             hello.classList.remove('reddd');
+        }, 500);
         // res1++;
         // if (res1 > 0){
         //     res1.style.color = "blue"
@@ -25,6 +29,10 @@ increase.forEach(function(hello){
 
 decrease.forEach(function(hello2){
     hello2.addEventListener('click', function(e){
+        hello2.classList.add('green');
+        setTimeout(() => {
+           hello2.classList.remove('green');
+        }, 1000);
        var res = e.target.parentElement.previousElementSibling;
        res.innerHTML  = res.innerHTML - 1;
        console.log(res);
@@ -111,6 +119,9 @@ Array.from(formm).forEach(function(ee){
         e.preventDefault();
         var newText = ee.querySelector('input[type="text"]').value;
         console.log(newText);
+        if (newText.length == 0) {
+            alert('Empty comment invalid')
+        } else{
         var p = document.createElement('p');
         var div = document.createElement('div');
         var span = document.createElement('span')
@@ -131,6 +142,7 @@ Array.from(formm).forEach(function(ee){
         p.classList.add('red')
         // console.log(p.classList);
         console.log(span)
+    }
     
     
     
@@ -152,11 +164,17 @@ dark1.addEventListener('click', function(){
     var ele = document.querySelectorAll('.header2');
     ele.forEach(function(e){
         e.classList.toggle('darkmode');
+        e.classList.toggle('white');
+
     })
 
     var ele2 = document.querySelectorAll('.float');
     ele2.forEach(function(ee){
         ee.classList.toggle('darkmode');
+        ee.classList.toggle('white2');
+
     })
     
+    var comment = document.querySelector('.appendComment');
+    comment.classList.toggle('darkmode');
 })
