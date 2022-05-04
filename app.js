@@ -111,7 +111,7 @@ reply.forEach(function(replybtn){
 //     form1.reset();
 // })
 
-
+var span;
 var formm = document.forms;
 console.log(formm);
 Array.from(formm).forEach(function(ee){
@@ -124,7 +124,7 @@ Array.from(formm).forEach(function(ee){
         } else{
         var p = document.createElement('p');
         var div = document.createElement('div');
-        var span = document.createElement('span')
+        span = document.createElement('span')
         var img = document.createElement('img');
         var hello2 = e.target.parentElement.parentElement.children[0];
     
@@ -148,14 +148,25 @@ Array.from(formm).forEach(function(ee){
     
         ee.reset();
        console.log( e.target.parentElement.parentElement.children[0]);
+
+    //    span.addEventListener("click",function(e){
+    //     //    e.target.style.color = 'blue';
+    //     var chi = e.target.parentElement;
+    //     var par = e.target.parentElement.parentElement
+    //     par.removeChild(chi);
+    //         console.log(e.target.parentElement.parentElement);
+    //    })
+
+    $('span').click(function(e){
+        var chi = e.target.parentElement;
+              var par = e.target.parentElement.parentElement;
+              par.removeChild(chi);
+                  console.log(e.target.parentElement.parentElement);
+      })
     })
 
 })
 
-// var workp = document.querySelector('span');
-// var foedm = document.querySelector('.quote');
-
-// console.log(workp);
 
 var dark1 = document.querySelector('.dark');
 dark1.addEventListener('click', function(){
